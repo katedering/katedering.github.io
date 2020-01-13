@@ -1,0 +1,646 @@
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Handlee|Niconne|Lora');
+
+ body {
+  background-image: url(https://i.imgur.com/6Hp3uJk.jpg);
+  background-repeat: no-repeat;
+  background-attachment: center top;
+  background-size: cover;
+  color: white;
+ }
+
+ img {
+  height: 100px;
+  width: 100px;
+  border: 5px solid #AAAAAA;
+ }
+
+ #container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  height: 700px;
+  width: 710px;
+  margin-left: -355px;
+ }
+
+ #trip {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ }
+
+ #trip2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #trip:hover + #trip2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #kate {
+ position: absolute;
+ top: 0px;
+ left: 120px;
+ }
+
+ #kate2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #kate:hover + #kate2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #vanny {
+ position: absolute;
+ top: 0px;
+ left: 240px;
+ }
+
+ #vanny2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #vanny:hover + #vanny2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #saffy {
+ position: absolute;
+ top: 0px;
+ left: 360px;
+ }
+
+ #saffy2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #saffy:hover + #saffy2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #toshi {
+ position: absolute;
+ top: 0px;
+ left: 480px;
+ }
+
+ #toshi2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #toshi:hover + #toshi2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #ttrip {
+ position: absolute;
+ top: 0px;
+ left: 600px;
+ }
+
+ #ttrip2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #ttrip:hover + #ttrip2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #lala {
+ position: absolute;
+ top: 120px;
+ left: 0px;
+ }
+
+ #lala2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #lala:hover + #lala2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+
+ #mika {
+ position: absolute;
+ top: 120px;
+ left: 120px;
+ }
+
+ #mika2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #mika:hover + #mika2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #rama {
+ position: absolute;
+ top: 120px;
+ left: 240px;
+ }
+
+ #rama2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #rama:hover + #rama2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+
+ #eles {
+ position: absolute;
+ top: 120px;
+ left: 360px;
+ }
+
+ #eles2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #eles:hover + #eles2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+
+ #koko {
+ position: absolute;
+ top: 120px;
+ left: 480px;
+ }
+
+ #koko2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #koko:hover + #koko2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #yelo {
+ position: absolute;
+ top: 120px;
+ left: 600px;
+ }
+
+ #yelo2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #yelo:hover + #yelo2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+
+ #susy {
+ position: absolute;
+ top: 240px;
+ left: 0px;
+ }
+
+ #susy2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #susy:hover + #susy2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #tera {
+ position: absolute;
+ top: 240px;
+ left: 120px;
+ }
+
+ #tera2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #tera:hover + #tera2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #luci {
+ position: absolute;
+ top: 240px;
+ left: 240px;
+ }
+
+ #luci2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #luci:hover + #luci2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #zeta {
+ position: absolute;
+ top: 240px;
+ left: 360px;
+ }
+
+ #zeta2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #zeta:hover + #zeta2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #katex {
+ position: absolute;
+ top: 240px;
+ left: 480px;
+ }
+
+ #katex2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #katex:hover + #katex2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #roll {
+ position: absolute;
+ top: 240px;
+ left: 600px;
+ }
+
+ #roll2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #roll:hover + #roll2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+
+ #mew {
+ position: absolute;
+ top: 360px;
+ left: 0px;
+ }
+
+ #mew2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #mew:hover + #mew2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #m87 {
+ position: absolute;
+ top: 360px;
+ left: 120px;
+ }
+
+ #m872 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #m87:hover + #m872 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #santa {
+ position: absolute;
+ top: 360px;
+ left: 240px;
+ }
+
+ #santa2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #santa:hover + #santa2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+
+ #rand {
+ position: absolute;
+ top: 360px;
+ left: 360px;
+ }
+
+ #rand2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #rand:hover + #rand2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #riven {
+ position: absolute;
+ top: 360px;
+ left: 480px;
+ }
+
+ #riven2 {
+  font-family: Handlee, cursive;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  opacity:0;
+  transition-duration: .5s;
+ }
+
+ #riven:hover + #riven2 {
+  opacity: 1;
+  transition-duration: 1s;
+ }
+
+ #title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  height: 50px;
+  width: 700px;
+  margin-left: -350px;
+  text-align: center;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 30px
+}
+</style>
+
+<div id="title">Select Your Character</div>
+
+<div id="container">
+<a id="trip" href="https://katedering.github.io/Hero_of_Stars.html" target="_blank"><img src="https://i.imgur.com/A6ss0EO.png"></a>
+<div id="trip2"><center><font size="10">Trip</font><hr width="60%"><font size="5">The Hero of Stars</font></center></div>
+
+<a id="kate" href="https://katedering.github.io/The_Milletian.html" target="_blank"><img src="https://i.imgur.com/tQ5Ajgj.png"></a>
+<div id="kate2"><center><font size="9">Kate</font><hr width="60%"><font size="5">Milletian Succubus</font></center></div>
+
+<a id="vanny" href="https://katedering.github.io/Vanella.html" target="_blank"><img src="https://i.imgur.com/S2uMT6I.png"></a>
+<div id="vanny2"><center><font size="9">Vanessa Lynn Williams</font><hr width="60%"><font size="5">The Shy One</font></center></div>
+
+<a id="saffy" href="https://katedering.github.io/Saffron.html" target="_blank"><img src="https://i.imgur.com/Ru5eg2d.png"></a>
+<div id="saffy2"><center><font size="9">Saffron Williams</font><hr width="60%"><font size="5">Curious Little Thing</font></center></div>
+
+<a id="toshi" href="https://katedering.github.io/Toshiro_Inoue.html" target="_blank"><img src="https://i.imgur.com/wxnJ9jQ.png"></a>
+<div id="toshi2"><center><font size="9">Toshiro Inoue</font><hr width="60%"><font size="5">The Mysterious Lad</font></center></div>
+
+<a id="ttrip" href="https://katedering.github.io/Trainer_Trip.html" target="_blank"><img src="https://i.imgur.com/Rrjx8vb.png"></a>
+<div id="ttrip2"><center><font size="9">Trip Dering</font> (trainer)<hr width="60%"><font size="5">Kalosian Champion-to-Be</font></center></div>
+
+<a id="lala" href="https://katedering.github.io/Katelynn_the_Healer.html" target="_blank"><img src="https://i.imgur.com/7CrZRed.png"></a>
+<div id="lala2"><center><font size="9">Katelynn</font><hr width="60%"><font size="5">Lalafellin Lass</font></center></div>
+
+<a id="mika" href="https://katedering.github.io/Mika_Inoue.html" target="_blank"><img src="https://i.imgur.com/GuUN2bm.png"></a>
+<div id="mika2"><center><font size="9">Mika Inoue</font><hr width="60%"><font size="5">Kitkin Ex-Princess</font></center></div>
+
+<a id="rama" href="https://katedering.github.io/Rama_Shiaki.html" target="_blank"><img src="https://i.imgur.com/T9LFBHM.png"></a>
+<div id="rama2"><center><font size="9">Rama Shiaki</font><hr width="60%"><font size="5">Ice Mage in Training</font></center></div>
+
+<a id="eles" href="https://katedering.github.io/Elessar_Ancalimon.html" target="_blank"><img src="https://i.imgur.com/RDA8LrK.png"></a>
+<div id="eles2"><center><font size="9">Elessar Ancalímon</font><hr width="60%"><font size="5">Prince of Elves</font></center></div>
+
+<a id="koko" href="https://katedering.github.io/Kokoro_Belmont.html" target="_blank"><img src="https://i.imgur.com/nrTCKkl.png"></a>
+<div id="koko2"><center><font size="9">Kokoro Belmont</font><hr width="60%"><font size="5">Spacey Vampire Huntress</font></center></div>
+
+<a id="yelo" href="https://katedering.github.io/Trainer_Yellow.html" target="_blank"><img src="https://i.imgur.com/jXmoZRa.png"></a>
+<div id="yelo2"><center><font size="9">Amarillo del Bosque Verde</font><hr width="60%"><font size="5">The Yellow Trainer</font></center></div>
+
+<a id="susy" href="https://katedering.github.io/Susan_Blythe.html" target="_blank"><img src="https://i.imgur.com/1SXS1CG.png"></a>
+<div id="susy2"><center><font size="9">Susan Blythe</font><hr width="60%"><font size="5">Carefree Kid</font></center></div>
+
+<a id="tera" href="https://katedering.github.io/Terra_Byte.html" target="_blank"><img src="https://i.imgur.com/3IVqyCe.png"></a>
+<div id="tera2"><center><font size="9">Terra Byte</font><hr width="60%"><font size="5">Shocking Little Pixie</font></center></div>
+
+<a id="luci" href="https://katedering.github.io/Lucinda.html" target="_blank"><img src="https://i.imgur.com/n86XO16.png"></a>
+<div id="luci2"><center><font size="9">Phoebe Lucinda Hoshino</font><hr width="60%"><font size="5">The Chosen of Light</font></center></div>
+
+<a id="zeta" href="https://katedering.github.io/Trip_Dering.html" target="_blank"><img src="https://i.imgur.com/nQiSxfn.png"></a>
+<div id="zeta2"><center><font size="9">Trip Dering</font> (Mega Man)<hr width="60%"><font size="5">Chosen One for Model Zeta</font></center></div>
+
+<a id="katex" href="https://katedering.github.io/Kate_Dering.html" target="_blank"><img src="https://i.imgur.com/oS8pu68.png"></a>
+<div id="katex2"><center><font size="9">Kate Dering</font> (Mega Man)<hr width="60%"><font size="5">The Bearer of the Nanites</font></center></div>
+
+<a id="roll" href="https://katedering.github.io/Roll.html" target="_blank"><img src="https://i.imgur.com/z9b2iFA.png"></a>
+<div id="roll2"><center><font size="9">Roll</font><hr width="60%"><font size="5">DRN-002</font></center></div>
+
+<a id="mew" href="https://katedering.github.io/Mew_Mew_Cutie.html" target="_blank"><img src="https://i.imgur.com/1OwLjem.png"></a>
+<div id="mew2"><center><font size="9">Mew Mew Cutie</font><hr width="60%"><font size="5">Magical Girl Heroine</font></center></div>
+
+<a id="m87" href="https://katedering.github.io/M87.html" target="_blank"><img src="https://i.imgur.com/EWaox47.png"></a>
+<div id="m872"><center><font size="9">Messier 87*</font><hr width="60%"><font size="5">Literally a Black Hole</font></center></div>
+
+<a id="santa" href="https://katedering.github.io/Santa.html" target="_blank"><img src="https://i.imgur.com/jbExzhm.png"></a>
+<div id="santa2"><center><font size="9">Santa Claus</font><hr width="60%"><font size="5">Jolly Old Elf</font></center></div>
+
+<a id="rand" href="https://katedering.github.io/Randal_the_Vandal.html" target="_blank"><img src="https://i.imgur.com/9M036Y7.png"></a>
+<div id="rand2"><center><font size="9">Rahn-Del</font><hr width="60%"><font size="5">Eliksni Lightbearer</font></center></div>
+
+<a id="riven" href="https://katedering.github.io/Riven_of_A_Thousand_Voices.html" target="_blank"><img src="https://i.imgur.com/ZsEhFkJ.png"></a>
+<div id="riven2"><center><font size="9">Riven of A Thousand Voices</font><hr width="60%"><font size="5">The Last Known Ahamkara</font></center></div>
+</div>
