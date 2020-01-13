@@ -1,0 +1,298 @@
+<style>/*
+INVISIBLE CREDIT; PLEASE DON'T REMOVE
+
+Author: Elle
+For: ??? [RPC Profile]
+Text type: CSS/HTML
+*/
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Great+Vibes|Pacifico|Satisfy|Dancing+Script');
+   
+  /* Amatic SC = information ; Great Vibes = quotes ; Pacifico = h1? ; Satisy = links probs */
+  
+ ::-webkit-scrollbar{width:0.3vh;height:0.3vh;}
+ ::-webkit-scrollbar-thumb{border-radius:0;background:#000;}
+ ::-webkit-scrollbar-track{border-radius:0;background:transparent;}
+ 
+ body {
+   background-image: url('https://i.imgur.com/edZeS9z.png');
+   background-size: 35%;
+ }
+
+ #sheet {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,0.15);
+   top: 0%;
+   left: 0%;
+   z-index: -1;
+ }
+
+  #gallery {
+   height: 100px;
+   border: 2px solid white;
+ }
+
+  #center {
+   position: fixed;
+   height: 90%;
+   width: 100%;
+   left: 0%;
+   top: 5%;
+   background: transparent;
+ }
+ 
+  #img {
+   position: absolute;
+   height: 100%;
+   width: 15%;
+   top: 0%;
+   right: 50%;
+   transition-duration: 1.5s;
+   background: transparent;
+   z-index: -1;
+ }
+ 
+ #quote1 {
+   position: absolute;
+   height: 70%;
+   width: 30%;
+   left: 5%;
+   text-align: center;
+   font-family: 'Great Vibes';
+   font-size: 7vh;
+   transition-duration: 1s;
+ }
+ 
+  #quote2 {
+   position: absolute;
+   height: 70%;
+   width: 30%;
+   right: 5%;
+   text-align: center;
+   font-family: 'Great Vibes';
+   font-size: 7vh;
+   transition-duration: 1s;
+ }
+ 
+ #center:hover #quote1, #center:hover #quote2 {
+   opacity: 0;
+   transition-duration: 1s;
+ }
+ 
+ #box1 {
+   position: absolute;
+   font-family: 'Amatic SC';
+   color:#fff;
+   padding: 5px;
+   font-size: 2.7vh;
+   border-radius: 8px;
+   height: 91%;
+   width: 15%;
+   background: rgba(0,0,0,0.6);
+   top: 5%;
+   left: 42%;
+   transition-duration: 1s;
+   opacity: 0;
+ }
+ 
+ #host1 {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+ }
+ 
+ #stats, #bio {
+   height: 100%;
+   width: 100%;
+   overflow: auto;
+ }
+ 
+ #center:hover #box1 {
+   width: 38.5%;
+   left: 1%;
+   opacity: 1;
+   transition-duration: 1s;
+ }
+ 
+ #box2 {
+   position: absolute;
+   font-family: 'Amatic SC';
+   color:#fff;
+   padding: 5px;
+   font-size: 2.5vh;
+   border-radius: 8px;
+   height: 30%;
+   width: 15%;
+   top: 5%;
+   right: 40%;
+   background: rgba(0,0,0,0.6);
+   opacity: 0;
+   transition-duration: 1s;
+   overflow: auto;
+ }
+ 
+ #center:hover #box2 {
+   position: absolute;
+   width: 36%;
+   right: 1%;
+   opacity: 1;
+   transition-duration: 1s;
+ }
+   
+  #box3 {
+    position: absolute;
+    font-family: 'Amatic SC';
+    color:#fff;
+    padding: 5px;
+    font-size: 2.7vh;
+    height: 56%;
+    top: 40%;
+    width: 15%;
+    background: rgba(0,0,0,0.6);
+    right: 40%;
+    border-radius: 8px;
+    opacity: 0;
+    transition-duration: 1s;
+    overflow: auto;
+  }
+  
+  #center:hover #box3 {
+    width: 36%;
+    right: 1%;
+    opacity: 1;
+    transition-duration: 1s;
+  }
+  
+  #navigation {
+    position: absolute;
+    background: transparent;
+    top: 20%;
+    left: 41.5%;
+    height: 10%;
+    width: 5%;
+    font-size: 5vh;
+    opacity: 0;
+    transition-duration: 1s;
+  }
+  
+  #center:hover #navigation {
+    opacity: 1;
+    transition-duration: 1s;
+  }
+    
+  a.nav {
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  
+  a.nav:hover {
+    color: #fff;
+    transition-duration: 0.5s;
+    font-size: 100%;
+  }
+  
+  a {
+   font-family:'Satisfy';
+   text-decoration:none;
+   color:#f09eff;
+   transition-duration:1s;
+  }
+  
+  a:hover {
+    font-size:110%;
+    transition-duration:1s;
+  }
+    
+   /* Credit. please don't remove! */
+ 
+ #credit {
+   position: absolute;
+   background: rgba(0,0,0,0.4);
+   border-left: rgb(255,255,255);
+   font-family: 'Amatic SC';
+   font-size: 2.3vh;
+   padding: 3px;
+   bottom: 2%;
+   left: 43%;
+   color: #fff;
+ }
+ 
+ .r {float: right;}
+ 
+ b {color:#d8a3ff;}
+ 
+ h1{font-family:'Dancing Script';font-size:4vh;text-decoration:underline;color:rgba(255, 114, 2030.7);}
+
+#star {position: absolute; top: 100%; left: 5px; margin-top: -55px; width: 50px; height: 50px; z-index: 99;}</style>
+
+<img id="star" title="A Certified Hero of Stars Alt" src="https://i.imgur.com/r0wFGcn.png">
+
+<div id="sheet"></div>
+<div id="center">
+ <div id="navigation">
+ <a href="#stats" class="nav">?</a><br>
+ <a href="#bio" class="nav">?</a>
+ </div>
+ <div id="quote1"><center><br><br><br><br>Such... such kindness...!</center></div>
+ <div id="quote2"><center><br><br><br><br>... I somehow made a friend!!!</center></div>
+ <div id="img">
+ <img src="https://i.imgur.com/2reH2ip.png" style="height: 100%;">
+ </div>
+ <div id="box1">
+ <div id="host1">
+ <div id="stats">
+ <center><h1>Stats</h1></center>
+ <br><br>
+ <font style="font-size:3vh;">
+ <b>Name</b><div class="r">Mew Mew</div><br>
+ <b>Moniker</b><div class="r">Kissy Cutie!</div><br>
+ <b>Gender</b><div class="r">Female</div><br>
+ <b>Age</b><div class="r">20 y.o.</div><br>
+ <b>Species</b><div class="r">Nekomimi</div><br>
+ <b>Persona</b><div class="r">Girly, Soft</div><br>
+ <b>Height</b><div class="r">5 foot exactly</div>
+ <br><br>
+ <center><h1>Gallery</h1></center>
+ <br>
+ <center>
+ <a target="_blank" href="https://i.imgur.com/GqfJ8uI.jpg" target="_blank"><img id="gallery" src="https://i.imgur.com/syhkmsR.png"></a> 
+ <a target="_blank" href="https://i.imgur.com/LeSB94f.jpg" target="_blank"><img id="gallery" src="https://i.imgur.com/wrBDEnM.png"></a> 
+ <a target="_blank" href="https://i.imgur.com/V8Sprmv.png" target="_blank"><img id="gallery" src="https://i.imgur.com/JivnJXm.png"></a> 
+ <a target="_blank" href="https://i.imgur.com/bqGkige.png" target="_blank"><img id="gallery" src="https://i.imgur.com/QubIVJM.png"></a> 
+ <a target="_blank" href="https://i.imgur.com/j2lfkHl.png" target="_blank"><img id="gallery" src="https://i.imgur.com/zkpk1hV.png"></a></center>
+ <br><br><br>
+ </font>
+ </div>
+ <div id="bio">
+ <center><h1>Biography</h1></center>
+ <font style="justified">
+ <center>WORK.IN.PROGRESS<br>COME BACK NEXT TIME</center>
+ </font>
+ </div>
+ </div>
+ </div>
+ <div id="box2">
+ <center><h1>Friends</h1></center>
+ <a href="URLHERE">.name.</a>info.quote<br>
+ <a href="URLHERE">.name.</a>info.quote<br>
+ <a href="URLHERE">.name.</a>info.quote<br>
+ <a href="URLHERE">.name.</a>info.quote<br>
+ </div>
+ <div id="box3">
+ <center><h1>Out Of Character</h1></center>
+ <b>?</b> Work in Progress!<br>
+ <b>?</b> Can't do Para RP - short posts are better anyway.<br>
+ <b>?</b> Story, Smut, whatever. I'm picky though.<br>
+ <b>?</b> Approaching OOC is your best bet.<br>
+ <b>?</b> Not very kinky... vanilla smut is best.<br>
+ <center><h1>Typist Info</h1></center>
+ <b>?</b> Eastern Time Zone (GMT -5)<br>
+ <b>?</b> Availability varies. Discord for those I trust.<br>
+ <b>?</b> No OOC relationships.<br>
+ </div>
+</div>
+<div id="credit">
+ © <a target="_blank" href="https://roleplay.chat/profile.php?user=Ellexide">Elle</a>. Send an RPC mail for all inquiries~
+</div>

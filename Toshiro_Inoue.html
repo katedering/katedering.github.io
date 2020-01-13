@@ -1,0 +1,557 @@
+<style>@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway:300);
+::-webkit-scrollbar { width: 0.9vh; height: 0.9vh;}
+::-webkit-scrollbar-track { border-radius: 0px; background-color: transparent;}
+::-webkit-scrollbar-thumb { border: 0.4vh solid #151515; border-radius:0px; background-color: #C52429;}
+ 
+body {
+background-color:#000000;
+}
+ 
+#statbut {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 6%;
+ background-color: #1e1e1e;
+ border: 0.4vh solid #336600;
+ box-shadow: 4px 4px 5px #000000;
+ position: fixed;
+ z-index:1;
+ -ms-transform: skewX(-30deg);
+ -webkit-transform: skewX(-30deg);
+ transform: skewX(-30deg);
+ top: 10%;
+ left: 18%;
+ overflow: auto;
+opacity:0;
+ font-family: Times New Roman;
+ 
+-webkit-animation:statanim 0.5s 1;
+animation:statanim 0.5s 1;
+animation-delay:4.9s;
+animation-fill-mode:forwards;
+-webkit-animation-delay:4.9s;
+-webkit-animation-fill-mode:forwards;}
+ 
+@keyframes statanim{
+from{left:0%;opacity:0;}
+to{left:18%;opacity:1;}
+}
+@-webkit-keyframes statanim{
+from{left:0%;opacity:0;}
+to{left:18%;opacity:1;}
+}
+ 
+#statbut a {
+ display: block;
+ color:#336600;
+ text-shadow: 2px 2px 2px #000000;
+ font-size: 2vh;
+ padding: 4% 8px 4% 8px;
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+}
+ 
+#statbut a:hover{
+ background-color: #336600;
+ color:#FFFFFF;
+ text-shadow: 2px 2px 2px #000000;
+ font-size: 2vh;
+}
+ 
+#biobut {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 6%;
+ background-color: #1e1e1e;
+ border: 0.4vh solid #336600;
+opacity:0;
+ box-shadow: 4px 4px 5px #000000;
+ position: fixed;
+ z-index:1;
+ -ms-transform: skewX(-30deg);
+ -webkit-transform: skewX(-30deg);
+ transform: skewX(-30deg);
+ top: 15%;
+ left: 18%;
+ overflow: auto;
+ font-family: Times New Roman;
+-webkit-animation:bioanim 0.5s 1;
+animation:bioanim 0.5s 1;
+animation-delay:4.6s;
+animation-fill-mode:forwards;
+-webkit-animation-delay:4.6s;
+-webkit-animation-fill-mode:forwards;}
+ 
+@keyframes bioanim{
+from{left:0%;opacity:0;}
+to{left:18%;opacity:1;}
+}
+@-webkit-keyframes bioanim{
+from{left:0%;opacity:0;}
+to{left:18%;opacity:1;}
+}
+ 
+#biobut a {
+ display: block;
+ color:#336600;
+ text-shadow: 2px 2px 2px #000000;
+ font-size: 2vh;
+ padding: 4% 8px 4% 8px;
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+}
+ 
+#biobut a:hover{
+ background-color: #336600;
+ color:#FFFFFF;
+ text-shadow: 2px 2px 2px #000000;
+ font-size: 2vh;
+}
+ 
+#oocbut {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 6%;
+ background-color: #1e1e1e;
+ border: 0.4vh solid #336600;
+ box-shadow: 4px 4px 5px #000000;
+ position: fixed;
+ z-index:1;
+ -ms-transform: skewX(-30deg);
+ -webkit-transform: skewX(-30deg);
+ transform: skewX(-30deg);
+ top: 20%;
+ left: 18%;
+ overflow: auto;
+opacity:0;
+ font-family: Times New Roman;
+-webkit-animation:oocanim 0.5s 1;
+animation:bioanim 0.5s 1;
+animation-delay:4.3s;
+animation-fill-mode:forwards;
+-webkit-animation-delay:4.3s;
+-webkit-animation-fill-mode:forwards;}
+ 
+@keyframes oocanim{
+from{left:0%;opacity:0;}
+to{left:18%;opacity:1;}
+}
+@-webkit-keyframes oocanim{
+from{left:0%;opacity:0;}
+to{left:18%;opacity:1;}
+}
+ 
+#oocbut a {
+ display: block;
+ color:#336600;
+ text-shadow: 2px 2px 2px #000000;
+ font-size: 2vh;
+ padding: 4% 8px 4% 8px;
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+}
+ 
+#oocbut a:hover{
+ background-color: #336600;
+ color:#FFFFFF;
+ text-shadow: 2px 2px 2px #000000;
+ font-size: 2vh;
+}
+ 
+audio{
+width:
+}
+ 
+#player{
+ position: absolute;
+ z-index:0;
+ top:25%;
+ left:19vw;
+ width: 5%;
+ border: 0.4vh solid #336600;
+ box-shadow: 4px 1px 5px #000000;
+ 
+ opacity:0;
+ overflow: hidden;
+ animation:musicfade 0.5s 1;
+animation-delay:4s;
+animation-fill-mode:forwards;
+-webkit-animation:musicfade 0.5s 1;
+-webkit-animation-delay:4s;
+-webkit-animation-fill-mode:forwards;}
+ 
+@keyframes musicfade{
+from{left:0%;opacity:0;}
+to{opacity:1;}
+}
+@-webkit-keyframes musicfade{
+from{left:20%;opacity:0;}
+to{opacity:1;}
+}
+ 
+#titlebar{
+ position: absolute;
+ z-index: 0;
+ left: 0%;
+ top: 30%;
+ width: 90%;
+ color:#336600;
+ background: #336600;
+ box-shadow: 4px 4px 5px #000000;
+ font-family: Cinzel Decorative;
+ font-size: 11vh;
+ -ms-transform: skewX(-30deg);
+ -webkit-transform: skewX(-30deg);
+ transform: skewX(-30deg);
+ opacity:0;
+ -webkit-animation: titebarmove 0.5s 1;
+ animation: titlebarmove 0.5s 1;
+ animation-delay:2s;
+ -webkit-animation-delay:2s;
+ animation-fill-mode: forwards;
+ -webkit-animation-fill-mode: forwards;}
+ 
+@-webkit-keyframes titlebarmove {
+from {top: 0%; opacity: 0;}
+to {top: 30%;opacity: 1;}
+}
+ 
+ 
+@keyframes titlebarmove {
+from {top: 0%;opacity: 0;}
+to {top: 30%; opacity: 1;}
+}
+ 
+#title {
+ position: absolute;
+ z-index: 1;
+ left: 20%;
+ top: 31%;
+ color:#FFFFFF;
+ text-shadow: 4px 1px 2px #000000;
+ font-family: Cinzel Decorative;
+ font-size: 11vh;
+ opacity:0;
+ -ms-transform: skewX(-30deg); /* IE 9 */
+ -webkit-transform: skewX(-30deg); /* Safari */
+ transform: skewX(-30deg);
+ -webkit-animation: name 0.5s 1;
+ animation: name 0.5s 1;
+ animation-delay: 2.5s;
+ -webkit-animation-delay:2.5s;
+ animation-fill-mode:forwards;
+ -webkit-animation-fill-mode:forwards;
+}
+ 
+@-webkit-keyframes name{
+from{left:0%;opacity:0;}
+to{left:20%;opacity:1;}
+}
+@keyframes name{
+from{left:0%;opacity:0;}
+to{left:20%;opacity:1;}
+}
+ 
+#subtitle{
+ position: absolute;
+ z-index:2;
+ left: 50%;
+ top: 37%;
+ color:#bbbb49;
+ text-shadow: 2px 1px 2px #000000;
+ font-family: Cinzel Decorative;
+ font-size: 8vh;
+ -ms-transform: skewX(-30deg); /* IE 9 */
+ -webkit-transform: skewX(-30deg); /* Safari */
+ transform: skewX(-30deg);
+ opacity:0;
+ -webkit-animation: subfade 1s 1;
+ animation: subfade 1s 1;
+ animation-fill-mode:forwards;
+ animation-delay:3s;
+ -webkit-animation-delay:3s;
+ -webkit-animation-fill-mode:forwards;}
+ 
+@keyframes subfade{
+from{opacity:0;}
+to{opacity:1;}
+}
+@-webkit-keyframes subfade{
+from{opacity:0;}
+to{opacity:1;}
+}
+ 
+#mainpic {
+ position:fixed;
+ z-index: 3;
+ width:19%;
+ height: 100%;
+ left: 0px;
+ bottom: 0px;
+ background: #6D6D6B;
+ color: #6D6D6B;
+ font-size:2vh;
+ border-right: 0.8vh solid #336600;
+ box-shadow: 4px 1px 5px #000000;
+ overflow:hidden;
+ opacity:0;
+ -webkit-animation: picturefade 1s 1;
+ animation: picturefade 1s 1;
+ animation-delay:1s;
+ -webkit-animation-delay:1s;
+ animation-fill-mode: forwards;
+ -webkit-animation-fill-mode: forwards;}
+#mainpic img {
+ width: 100%;}
+ 
+@-webkit-keyframes picturefade{
+0%{left:-20%;opacity:0;}
+100%{left:0%;opacity:1;}
+}
+ 
+@keyframes picturefade{
+0%{left:-20%;opacity:0;}
+100%{left:0%;opacity:1;}
+}
+ 
+#infobox{
+ position: fixed;
+ z-index:1;
+ height: 98%;
+ background-color:transparent;
+ border-radius: 5px;
+ border: 2px solid #80584A;
+ box-shadow: 0px 0px 64px #000000;
+ right: 72px;
+ width: 50%;
+ top: 1%;
+ color:#bbbb49;
+ text-shadow: 2px 2px 2px #000000;
+ font-family: Times New Roman ;
+ font-size: 16pt;}
+ #infobox img {
+ width: 100%;}
+ 
+#credit{
+ position: fixed;
+ z-index:2;
+ bottom: 5px;
+ right: 5px;
+ color:#bbbb49;
+ text-shadow: 1px 1px 0px #000000;
+ font-family: Cinzel Decorative;
+ font-size: 2vh;}
+ 
+a{
+ color: #bbbb49;
+ text-shadow: 1px 1px 0px #000000;
+ font-family: Cinzel Decorative;
+ font-size: 2vh;
+ text-decoration: none;
+ transition: 0.5s;
+}
+a:hover{
+ color: #bbbb49;
+}
+ 
+#borderbox{
+position:absolute;
+z-index:0;
+top:46%;
+left:0%;
+width:79%;
+height:52%;
+background: #1e1e1e;
+border: 0.5vh solid #151515;
+box-shadow: 4px 4px 5px #000000;
+opacity:0;
+-ms-transform: skewX(-30deg); /* IE 9 */
+-webkit-transform: skewX(-30deg); /* Safari */
+transform: skewX(-30deg);
+-webkit-animation:borderslide 1s 1;
+animation:borderslide 1s 1;
+animation-delay:3.5s;
+animation-fill-mode:forwards;
+-webkit-animation-delay:3.5s;
+-webkit-animation-fill-mode:forwards;}
+ 
+@keyframes borderslide{
+from{left:-40%;opacity:0;}
+to{left:0%;opacity:1;}
+}
+@-webkit-keyframes borderslide{
+from{left:-40%;opacity:0;}
+to{left:0%;opacity:1;}
+}
+ 
+#textscroll{
+position:absolute;
+z-index:6;
+left:21%;
+top: 49%;
+width:49%;
+height:48%;
+padding:4px;
+color: #bbbb49;
+font-size: 2vh;
+line-height:2.5vh;
+letter-spacing: 0.15vh;
+font-family: 'Raleway';
+text-shadow:2px 2px 2px #000000;
+opacity: 0;
+animation:textfade 1s 1;
+animation-delay:5.5s;
+animation-fill-mode:forwards;
+-webkit-animation:textfade 1s 1;
+-webkit-animation-delay:5.5s;
+-webkit-animation-fill-mode:forwards;}
+ 
+@keyframes textfade{
+from{opacity:0;}
+to{opacity:1;}
+}
+@-webkit-keyframes textfade{
+from{opacity:0;}
+to{opacity:1;}
+}
+ 
+h1 {
+font-family: Cinzel Decorative;
+font-size: 4vh;
+font-weight: normal;
+color: #336600;
+text-shadow: 2px 2px 0px #000000;
+text-align: center;
+letter-spacing: 1vw;
+}
+ 
+h2 {
+font-family: Cinzel Decorative;
+font-size: 2vh;
+font-weight: bold;
+color: #336600;
+text-shadow: 2px 2px 0px #000000;
+letter-spacing: 1vh;
+text-align: left;
+}
+ 
+h3 {
+font-family: Cinzel Decorative;
+font-size: 2vh;
+font-weight: bold;
+color: #336600;
+text-shadow: 2px 2px 0px #000000;
+letter-spacing: 1vh;
+text-align: center;
+line-height: 1.5vh;
+}
+ 
+hr {
+border-color: #336600;
+box-shadow: 2px 2px 0px #000000;
+}</style>
+
+<div id="statbut">
+<center>
+<a href="#stats">stats</a>
+</center>
+</div>
+ 
+<div id="biobut">
+<center>
+<a href="#bio">bio</a>
+</center>
+</div>
+ 
+<div id="oocbut">
+<center>
+<a href="#ooc">ooc</a>
+</center>
+</div>
+ 
+ 
+<div id="titlebar">
+o
+</div>
+ 
+<div id="title">
+Toshiro Inoue
+</div>
+ 
+<div id="subtitle">
+<center>
+The Mysterious Lad
+</center>
+</div>
+ 
+<div id="mainpic">
+PADDING<br>
+PADDING<br>
+<img src="https://i.imgur.com/bsSrrXm.jpg" width="30%">
+</div>
+ 
+<div id="borderbox">
+stuff
+</div>
+ 
+<div id="textscroll">
+<center>
+<div style="height: 100%; overflow-y: hidden;">
+<a name="stats"></a>
+<div style="width:100%; height: 100%; top: 100px; overflow: auto;" align="center">
+<h1>Stats</h1>
+<h3>Age:</h3> 22<br>
+<h3>Orientation:</h3> 95% Straight<br>
+<h3>Traits:</h3> Reserved, Gentle, Bookish, Protective<br>
+<h3>Likes:</h3> Books, Games, Pizza, Snuggles<br>
+<h3>Relations:</h3><a target="_blank" href="https://roleplay.chat/profile.php?user=Ayumi%20Amberwater">Ayumi</a> / <a target="_blank" href="https://roleplay.chat/profile.php?user=Sarah Drake">Sarah / Tara</a><br>
+</div>
+ 
+<a name="bio"></a>
+<div style="width:100%; height: 100%; top: 100px; overflow: auto;" align="left">
+<h1>Bio/Background</h1>
+ 
+<h2>Toshiro Inoue</h2>
+<hr>
+<center><i> </i></center><br>
+<br>
+Toshiro Inoue (no middle name given) is a third-year student at Bayshore University, a prestigious private university located in southern Florida. He is a transfer student from Japan, having decided to set out on his own to the land of freedom, for some unknown reason...<br>
+<br>
+He spends most of his time in the local public library, where he can be spotted reading various manga or fantasy novels, and where he also works part-time after school. He doesn't live on campus, instead having a modest apartment a few blocks down from where he works.<br>
+<br>
+A chance meeting with a sweet girl from the nearby bakery has spiraled into a beautifully budding romance, and he is now the lucky boyfriend of one Ayumi Amberwater.<br>
+<br>
+Life went on with Toshi and Ayumi, and he managed to get her to agree to move in with him. They spent a few nights of passion together, and she got him into one of her online games - which led to them meeting up with some of her game friends at a café in town. That, in turn, led to a simple dare which spiraled out of control, ending up with Toshiro sleeping with not only Ayumi, but Sarah and even her little sister Tara... and now all three are pregnant. What will become of poor Toshi?
+</div>
+<br>
+<a name="ooc"></a>
+<div style="width:60%; height: 100%; top: 100px; overflow: auto;" align="left">
+<h1>Gallery</h1>
+<font color = "#C52429">•</font><a target="_blank" href="https://i.imgur.com/WmKPRsg.jpg" target="_blank" tabindex="-1">Default Appearance.</a><br>
+<font color = "#C52429">•</font><a target="_blank" href="https://i.imgur.com/qYNIO7T.jpg" target="_blank" tabindex="-1">A rare cold snap!</a><br>
+<font color = "#C52429">•</font><a target="_blank" href="https://i.imgur.com/ttrsefX.jpg" target="_blank" tabindex="-1">Resting with his cat.</a><br>
+<font color = "#C52429">•</font><a target="_blank" href="https://i.imgur.com/brZrWLj.jpg" target="_blank" tabindex="-1">Cosplay with his cat!</a><br>
+<font color = "#C52429">•</font><a target="_blank" href="https://i.imgur.com/KhR0zj1.jpg" target="_blank" tabindex="-1">Him as a little boy.</a><br>
+<font color = "#C52429">•</font><a target="_blank" href="https://i.imgur.com/6ZVEoYa.jpg" target="_blank" tabindex="-1">(NSFW) A fit of loneliness...</a><br>
+<h1>Out of Character</h1>
+<font color = "#C52429">•</font>Typist is in Eastern Standard Time Zone.<br>
+<font color = "#C52429">•</font>Work schedule is very chaotic, but is almost always on late at night.<br>
+<font color = "#C52429">•</font>Interested in profile play, just ask. Sexual RP kinks available upon request.</div>
+</div>
+</div>
+ 
+
+<center>
+
+<img src="https://i.imgur.com/dYl2IJL.png" width="15%">
+
+</center><br>

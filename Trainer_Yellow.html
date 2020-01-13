@@ -1,0 +1,310 @@
+<style>/* Last Update: 11/07/18 */
+
+body {  background-image: radial-gradient(circle, gold, yellow);}
+
+/* PAGE BACKGROUND AND FONT */
+body {background-size:45%, cover;
+font-family:'Sorts Mill Goudy', serif;
+font-size:105%;
+}
+
+/* MAIN DISPLAY COLORS */
+.color, #gallery img, #mini img, .pop-title {
+background-color:rgba(0,0,0,0.8);
+color:#b7c006;
+}
+.color, #gallery img, #mini img {
+border:5px solid #000000;
+}
+h3 {
+background:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0));
+background:-o-linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0));
+background:-moz-linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0));
+background:-webkit-linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0));
+}
+h3 img {
+border:3px inset #111111;
+}
+a {
+color:#ff0000;
+}
+
+/* GOOGLE CHROME SCROLLBARS */
+::-webkit-scrollbar {
+width:8px;
+height:8px;
+background-color:#1b0f04;
+}
+::-webkit-scrollbar-thumb {
+background-color:#b7c006;
+box-shadow:0 0 4px inset #1b0f04;
+}
+
+/* CSS MEAT */
+#gallery {
+position:fixed;
+top:20%;
+left:5%;
+height:75%;
+padding:5px 0;
+overflow:hidden;
+}
+#gallery img {
+display:block;
+position:relative;
+top:-5px;
+height:100%;
+}
+#gallery img, .pop-title {
+left:50%;
+transform:translateX(-50%);
+-o-transform:translateX(-50%);
+-moz-transform:translateX(-50%);
+-webkit-transform:translateX(-50%);
+}
+#navbar {
+position:fixed;
+height:10%;
+top:5%;
+left:20%;
+text-align:center;
+}
+#navbar a {
+display:inline-block;
+position:relative;
+height:100%;
+}
+#navbar img {
+height:100%;
+}
+.pop-title {
+position:absolute;
+top:50%;
+min-width:100%;
+padding:3%;
+font-size:2.8vh;
+line-height:3.8vh;
+white-space:nowrap;
+opacity:0;
+}
+#navbar a:hover {
+z-index:2;
+}
+#navbar a:hover .pop-title{
+opacity:1;
+}
+#statusbox {
+position:fixed;
+top:16%;
+bottom:66%;
+left:50%;
+width:30%;
+padding:0.5% 1%;
+line-height:3vh;
+overflow:hidden;
+}
+#statusbox h2 {
+margin:0;
+font-size:4.5vh;
+line-height:5vh;
+}
+#statusbox img {
+height:15%;
+}
+#mana {
+height:17%;
+width:8%;
+border-radius:20%;
+}
+#mana::after {
+content:"";
+display:block;
+height:100%;
+border-radius:15%;
+}
+#mini {
+position:fixed;
+top:10%;
+left:85%;
+height:20%;
+}
+#mini img {
+height:90%;
+}
+#infobox {
+position:fixed;
+height:46%;
+width:50%;
+top:35%;
+left:40%;
+padding:2%;
+}
+.tab {
+position:relative;
+height:100%;
+width:100%;
+overflow-y:auto;
+}
+.tab h2 {
+text-align:center;
+}
+#infobox img {
+max-height:100%;
+}
+h3 {
+display;block;
+position:relative;
+height:52px;
+padding:0 2.5vw;
+margin:0;
+font-size:20px;
+line-height:52px;
+}
+h3 img {
+display:inline-block;
+position:relative;
+left:-2.5vw;
+height:40px;
+padding:3px;
+vertical-align:middle;
+}
+a {
+text-decoration:none;
+}
+p {
+text-indent:5%;
+}
+#credit {
+position:fixed;
+height:17px;
+right:1%;
+bottom:0%;
+background-color:#ffffff;
+border-radius:5px;
+}</style>
+
+<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+<div id="gallery">
+<img src="http://i.picpar.com/xTZc.png" alt="" id="pdefault"/>
+<img src="https://i.imgur.com/1klSusP.jpg" alt="" id="p1"/>
+<img src="https://raikou1.donmai.us/9d/55/__yellow_pokemon_special_and_etc_drawn_by_misato_moimoi__9d55cfed680ee69914c86a588c8dc2cc.jpg" alt="" id="p2"/>
+<img src="https://i.imgur.com/hQW4hwT.png" alt="" id="p4"/>
+</div>
+
+<div class="color" id="statusbox"><br>
+<center><font size=6>Yellow</font><br><br>
+The Forest Child</center>
+</div>
+
+<div class="color" id="navbar">
+<a href="#01">
+<div class="pop-title">Basics</div>
+<img src="http://i.picpar.com/sTZc.png"/>
+</a>
+<a href="#02">
+<div class="pop-title">History</div>
+<img src="http://i.picpar.com/sTZc.png"/>
+</a>
+<a href="#03">
+<div class="pop-title">The Team</div>
+<img src="http://i.picpar.com/sTZc.png"/>
+</a>
+<a href="#04">
+<div class="pop-title">Gallery</div>
+<img src="http://i.picpar.com/sTZc.png"/>
+</a>
+<a href="#05">
+<div class="pop-title">OOC</div>
+<img src="http://i.picpar.com/sTZc.png"/>
+</a>
+</div>
+
+
+<div class="color" id="infobox">
+<div class="tab" style="overflow:hidden;">
+
+<div class="tab" id="01">
+<h2>Basics</h2>
+<b>Name:</b>
+<br/>Amarillo del Bosque Verde
+<br/>
+<br/><b>Species:</b>
+<br/>Human
+<br/>
+<br/><b>Gender:</b>
+<br/>Female
+<br/>
+<br/><b>Age:</b>
+<br/>Fifteen
+<br/>
+<br/><b>Hair:</b>
+<br/>Golden Blonde
+<br/>
+<br/><b>Eyes:</b>
+<br/>Brown
+<br/>
+<br/><b>Height:</b>
+<br/>Short
+<br/>
+<br/><b>Weight:</b>
+<br/>Light
+<br/>
+<br/><b>Build:</b>
+<br/>Small
+<br/>
+<br/><b>Orientation:</b>
+<br/>Straight
+<br/>
+<br/><b>Occupation:</b>
+<br/>Trainer
+</div>
+
+<div class="tab" id="02">
+<h2>History</h2>
+<center><a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Yellow_(Adventures)" title="Click here to visit her Bulbapedia information page!"><img src="https://cdn.bulbagarden.net/upload/2/2c/YellowSecondchapter.png" height="250"></a></center>
+</div>
+
+<div class="tab" id="03">
+<h2>The Team</h2>
+<center><img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/pikachu-f.gif"> <img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/butterfree.gif"> <img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/omastar.gif"> <img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/golem.gif"> <img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/dodrio.gif"> <img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/raticate.gif"></center>
+</div>
+
+<div class="tab" id="04">
+<h2>Gallery</h2>
+<a href="#p1">Picture 1</a>
+<br/>
+<a href="#p2">Picture 2</a>
+<br/>
+<a href="#pdefault">Picture 3</a> (Default)
+<br/>
+<a href="#p4">Picture 4</a>
+<br/><br/>
+---<br><br>
+<a target="_blank" href="https://i.imgur.com/KuGRqqO.png" target="_blank">Picture 5</a>
+<br>
+<a target="_blank" href="https://i.imgur.com/aSSXnSm.png" target="_blank">Picture 6</a>
+<br>
+<a target="_blank" href="https://i.imgur.com/Vk89lY8.jpg" target="_blank">Picture 7</a>
+</div>
+
+<div class="tab" id="05">
+<h2>OOC</h2>
+<ul>
+<li>Always a work in progress.</li>
+<li>Images used are not mine.</li>
+<li>Schedule varies. For best results, use Discord.</li>
+<li>Life comes before RP. May vanish unexpectedly.</li>
+<li>Story > Romance > Smut. Smut is earned, not given freely - unless the mood strikes me.</li>
+<li>Character from the Pokémon Adventures Manga. Not to be "aged up" to fit your whims.</li>
+<li>Can play in any universe, within reason.</li>
+<li>Tell me how cute I am!</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<a target="_blank" href="http://wix.cera-nore.com/" target="_blank" title="GS#01">
+<img src="https://orig00.deviantart.net/9a8a/f/2017/256/c/d/cera_by_cera_nore-dbncbii.png" id="credit"/>
+</a>
